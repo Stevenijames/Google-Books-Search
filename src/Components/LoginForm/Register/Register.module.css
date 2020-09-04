@@ -1,0 +1,30 @@
+.register_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.button_wrapper button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: var(--rounded);
+    padding: 1.2em 2.2em;
+    transition: ease-in-out 300ms;
+}
+
+.button_wrapper button:hover {
+    background-color:  var(--green2);
+}
+
+.button_wrapper b {
+    color: #363636;
+    cursor: pointer;
+}
