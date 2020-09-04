@@ -7,7 +7,6 @@ const Button = (props) => {
         <div>
             <button
                 type="button"
-                // onClick={props.bookSearchHandler}
                 onClick={props.onClick}
                 className={styles.button}
                 style={props.padding}>{props.btnName}</button>

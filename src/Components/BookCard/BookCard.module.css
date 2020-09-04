@@ -8,17 +8,17 @@
     display: grid;
     grid-gap: 10px;
     overflow: hidden;
-    border: 2px solid var(--green);
+    border: 2px solid var(--blue);
     transition: 350ms ease-in-out;
   }
   
   
   .bookCard:hover h2 {
-    background-color: var(--green2);
+    background-color: var(--blue);
   }
   
   .bookCard:hover {
-    border: 2px solid var(--green2);
+    border: 2px solid var(--blue);
     transform: scale(1.02);
     box-shadow: #cacaca 2px 5px 10px;
   }
@@ -26,13 +26,13 @@
   
   .bookImg {
     justify-self: center;
-    border-radius: var(--rounded)
+    border-radius: var(--squared)
   }
   
   h2 {
     justify-self: center;
     font-size: 1rem;
-    background-color: var(--green);
+    background-color: var(--blue);
     width: 100%;
     padding: 1em;
     transition: 300ms;
@@ -65,7 +65,6 @@
   .loading {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     width: 80vw;
     height: 100vh;
   }

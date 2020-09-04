@@ -1,7 +1,7 @@
 .login_wrapper {
     width: 30%;
     height: auto;
-    border-radius: var(--rounded);
+    border-radius: var(--squared);
     padding: 1em;
     box-shadow: #cccccca8 0px 0px 30px;
     display: grid;

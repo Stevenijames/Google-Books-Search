@@ -15,7 +15,7 @@
 .button_wrapper button {
     background-color: var(--blue);
     border: none;
-    border-radius: var(--rounded);
+    border-radius: var(--squared);
     padding: 1.2em 2.2em;
     transition: ease-in-out 300ms;
 }

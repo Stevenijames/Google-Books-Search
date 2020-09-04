@@ -12,13 +12,6 @@ const LoginForm = (props) => {
             <div className={styles.input_wrapper}>
                 {props.children}
             </div>
-
-            {/* <div className={styles.btnWrapper}>
-                <Button btnName='LOGIN' onClick={props.onRouteChange} />
-                <Link to='/register'>
-                    <Button btnName='REGISTER' onClick={() => props.onRouteChange('register')} />
-                </Link>
-            </div> */}
         </div>
     )
 }

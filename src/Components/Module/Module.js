@@ -11,9 +11,9 @@ const Module = (props) => {
         <div className={styles.module}>
             <h3 className={styles.bookTitle}>{props.bookTitle}</h3>
             <hr />
-            <p>{props.description[0] === undefined ? 'No Information provided by author, Please Visit Google Books by clicking below button for further information' : props.description}</p>
+            <p>{props.description[0] === undefined ? 'No Information provided by author, Please Visit Google Books for further information' : props.description}</p>
             <CardButton
-                showModel={() => { }} //Does nothing, just to overwrite function
+                showModel={() => { }}
                 buttonName='View on Google Books'
                 infoLink={props.infoLink}
             />
