@@ -56,10 +56,10 @@ const SideMenu = (props) => {
                 id='magazines'
                 value='magazines'
             />
-            {/* <button
-                    disabled={props.disabledStatus} 
-                    className={styles.resetButton} 
-                    onClick={props.resetFilters}>Reset Filters</button> */}
+            <button
+                disabled={props.disabledStatus}
+                className={styles.resetButton}
+                onClick={props.resetFilters}>Reset Filters</button>
         </div>
     )
 }

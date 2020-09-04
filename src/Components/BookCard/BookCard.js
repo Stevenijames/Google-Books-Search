@@ -16,9 +16,9 @@ class BookCard extends Component {
             this.setState({ bookInfo: <div className={styles.message}>Search books by entering book/author name in search bar.</div>, isLoding: false })
         } else {
             this.props.emptyDescription()
-            // fetch(`https://www.googleapis.com/books/v1/volumes?q=${this.props.keyword}&orderBy=${this.props.sortBy}&key=${this.state.key}&startIndex=${this.props.startItemIndex}&maxResults=${this.props.maxItems}`)
-            //   .then(res => res.json())
-            //   .then(data => console.log(data));
+            fetch(`https://www.googleapis.com/books/v1/volumes?q=${this.props.keyword}&orderBy=${this.props.sortBy}&key=${this.state.key}&startIndex=${this.props.startItemIndex}&maxResults=${this.props.maxItems}`)
+                .then(res => res.json())
+                .then(data => console.log(data));
 
             fetch(`https://www.googleapis.com/books/v1/volumes?q=${this.props.keyword}&orderBy=${this.props.sortBy}&printType=${this.props.printType}&key=${this.state.key}&startIndex=${this.props.startItemIndex}&maxResults=${this.props.maxItems}`)
                 .then(res => res.json())
@@ -38,7 +38,7 @@ class BookCard extends Component {
                                 {subtitle && <p className={styles.description}>{subtitle.substring(0, 100)}</p>}
                                 <div className={styles.button_wrapper}>
                                     <CardButton
-                                        showModel={() => { }} //Does nothing, just to overwrite function
+                                        showModel={() => { }}
                                         buttonName='VISIT'
                                         infoLink={infoLink} />
                                     <CardButton

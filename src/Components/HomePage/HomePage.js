@@ -9,7 +9,7 @@ const HomePage = (props) => {
     return (
         <div className={styles.main_wrapper}>
             <SideMenu
-                disabledStatus={props.disabledStatus}
+                // disabledStatus={props.disabledStatus}
                 sortChecked={props.sortChecked}
                 printChecked={props.printChecked}
                 resetFilters={props.resetFilters}

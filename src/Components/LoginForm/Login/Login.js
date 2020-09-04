@@ -19,7 +19,7 @@ class Login extends Component {
     }
 
     onSubmitLogin = () => {
-        fetch('http://localhost:4000/login', {
+        fetch('http://localhost:3001/login', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -53,7 +53,7 @@ class Login extends Component {
                     <div className={styles.button_wrapper}>
                         <button type='button' onClick={this.onSubmitLogin}>LOGIN</button>
                         {"or"}
-                        <b onClick={() => onRouteChange('register')}>Register</b>
+                        <b onClick={() => onRouteChange('submit')}>Register</b>
                     </div>
                 </LoginForm>
             </div>
